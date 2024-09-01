@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  background-color: #0d041f;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.card-header {
+  margin-bottom: 10px;
+  padding: 10px 10px 30px 20px;
+  font-size: x-large;
+  font-weight: bolder;
+  background-color: #430b8a;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  color: rgba(255, 255, 255, 1);
+  height: 20px;
+}
+
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scroll-bar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#submit-btn {
+  padding: 10px 40px;
+  background-color: #470e91;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  font-size: medium;
+  text-wrap: wrap;
+}
+
+#submit-btn:hover {
+  background-color: #431185;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.4);
+  }
+
+  50% {
+    transform: rotate(180deg);
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.4);
+  }
+
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.4);
+  }
+}
